@@ -22,24 +22,24 @@
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_margin="20dp">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button1"
                     android:onClick="setChar"
                     android:layout_weight="0.3"/>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button2"
                     android:onClick="setChar"
                     android:layout_weight="0.3"/>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button3"
                     android:onClick="setChar"
                     android:layout_weight="0.3" />
@@ -48,24 +48,24 @@
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_margin="20dp">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button4"
                     android:onClick="setChar"
                     android:layout_weight="0.3" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button5"
                     android:onClick="setChar"
                     android:layout_weight="0.3" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button6"
                     android:onClick="setChar"
                     android:layout_weight="0.3" />
@@ -74,24 +74,24 @@
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_margin="20dp">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button7"
                     android:onClick="setChar"
                     android:layout_weight="0.3" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button8"
                     android:onClick="setChar"
                     android:layout_weight="0.3" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/button9"
                     android:onClick="setChar"
                     android:layout_weight="0.3" />
@@ -119,7 +119,6 @@
                 android:text="@string/reset_game"
                 android:layout_gravity="center"
                 android:onClick="reset"/>
-
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

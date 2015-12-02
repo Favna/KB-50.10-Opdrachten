@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.ImageButton;
 
 import java.io.Serializable;
 import java.sql.SQLOutput;
@@ -79,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
         //Set all buttons empty
         for (int i = 1; i < 10; i++) {
             int id = getResources().getIdentifier("button"+i, "id", getPackageName());
-            Button button = (Button) findViewById(id);
-            button.setText("");
+            ImageButton button = (ImageButton)findViewById(id);
+            button.setImageResource(R.drawable.empty);
             button.setEnabled(true);
         }
         //Set move to player 1
@@ -130,7 +131,8 @@ public class MainActivity extends AppCompatActivity {
         Random rn = new Random();
         int nummer = rn.nextInt(9)+1;
         int id = getResources().getIdentifier("button"+nummer, "id", getPackageName());
-        Button button = (Button)findViewById(id);
+        ImageButton button = (ImageButton)findViewById(id);
+
         //Check state is blank
         int xloc = 0;
         int yloc = 0;
@@ -249,19 +251,22 @@ public class MainActivity extends AppCompatActivity {
 
         return false;
     }
-
-    //Set x in button
+    //set button x image
     public void setX(int id){
-        Button button = (Button)findViewById(id);
-        button.setText("X");
-        button.setEnabled(false);
+        ImageButton btn =(ImageButton)findViewById(id);
+        btn.setImageResource(R.drawable.cross);
+        btn.setEnabled(false);
     }
 
     //Set O in button
     public void setO(int id){
-        Button button = (Button)findViewById(id);
-        button.setText("O");
-        button.setEnabled(false);
+        ImageButton btn = (ImageButton)findViewById(id);
+        btn.setImageResource(R.drawable.circle);
+        btn.setEnabled(false);
+    }
+    public void setEmpty(int id){
+        ImageButton btn = (ImageButton)findViewById(id);
+        btn.setImageResource(R.drawable.empty);
     }
 
     //Fill board with chosen position
@@ -378,7 +383,7 @@ public class MainActivity extends AppCompatActivity {
         //Disable buttons
         for (int i = 1; i < 10; i++) {
             int id = getResources().getIdentifier("button" + i, "id", getPackageName());
-            Button button = (Button) findViewById(id);
+            ImageButton button = (ImageButton) findViewById(id);
             button.setEnabled(false);
         }
 
@@ -404,8 +409,7 @@ public class MainActivity extends AppCompatActivity {
                     setX(id);
                 }else if(board[x][y] == CELL_STATE.O) {
                     setO(id);
-                } else{
-                    //Niks (TODO: Handle exception if here, otherwise remove else statement if impossible)
+                }else {
                 }
                 number++;
             }
