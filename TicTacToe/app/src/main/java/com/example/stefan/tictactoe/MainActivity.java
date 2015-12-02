@@ -383,7 +383,7 @@ public class MainActivity extends AppCompatActivity {
         //Disable buttons
         for (int i = 1; i < 10; i++) {
             int id = getResources().getIdentifier("button" + i, "id", getPackageName());
-            Button button = (Button) findViewById(id);
+            ImageButton button = (ImageButton) findViewById(id);
             button.setEnabled(false);
         }
 
