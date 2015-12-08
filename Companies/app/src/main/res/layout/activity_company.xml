@@ -81,13 +81,13 @@
                     android:onClick="openWeb"
                     android:layout_weight="0.5" />
             </TableRow>
+            <TableRow>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableRow>
         </TableLayout>
-
-        <Gallery
-            android:layout_width="342dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/gallery"
-            android:layout_weight="0.90" />
 
     </LinearLayout>
 </RelativeLayout>
