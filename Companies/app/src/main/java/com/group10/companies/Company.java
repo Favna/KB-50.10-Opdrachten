@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,11 +28,6 @@ public class Company extends AppCompatActivity {
         initialValues.put("name", "Pete");
         initialValues.put("history", "Blub");
         initialValues.put("website", "http://website.nl");
-        initialValues.put("telephonenumber", "0123456789");
-        initialValues.put("city", "City");
-        initialValues.put("address", "Address 1");
-        initialValues.put("longitude", "1234");
-        initialValues.put("latitude", "4321");
         writedb.insert("company", null, initialValues);
 
         //Add pictures
@@ -45,7 +41,7 @@ public class Company extends AppCompatActivity {
 
         //SELECT
         SQLiteDatabase readdb = DBHelper.getReadableDatabase();
-        Cursor c = readdb.query("company", new String[]{"id", "name", "history", "website", "telephonenumber", "city", "address", "longitude", "latitude"}, "id = 1", null, null, null, null, null);
+        Cursor c = readdb.query("company", new String[]{"id", "name", "history", "website"}, "id = 1", null, null, null, null, null);
 
         c.moveToFirst();
         TextView companyName = (TextView) findViewById(R.id.company_name);
@@ -56,8 +52,7 @@ public class Company extends AppCompatActivity {
         companyUrl.setText(c.getString(3));
 
         //Set image gallery
-        ImageView imageView = (ImageView) findViewById(R.id.gallery);
-        imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+
     }
 
 
