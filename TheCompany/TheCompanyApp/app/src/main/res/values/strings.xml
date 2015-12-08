@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">The Company</string>
+
+    // General
+    <string name="forward">Forward</string>
+    <string name="back">Back</string>
+
+    // Fragment Company
+    <string name="fragment_company">Company</string>
+    <string name="fragment_company_title">Company Name</string>
+    <string name="fragment_company_history">History</string>
+    <string name="fragment_company_website"> <a href="http://www.google.com">www.google.com</a></string>
+    //TODO: Dynamic input via CRUD
+
+    // Fragment office
+    <string name="fragment_office">Offices</string>
+    <string name="title_activity_detail">Detail</string>
+
+    // Detail
+    <string name="detail_txt_number">Number</string>
+    <string name="detail_txt_address">Address</string>
+    <string name="detail_btn_phone">Call</string>
+    <string name="detail_btn_map">Google Maps</string>
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">test2 CRUD</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_add">Add Company</string>
+    <string name="btn_modify">Modify Company</string>
+    <string name="btn_delete">Delete Company</string>
+
+    // General
+    <string name="btn_record_cancel">Cancel Record</string>
+
+    // AddCompany.java
+    <string name="txt_title_add_company">Add Company</string>
+    <string name="txt_name">Company Name</string>
+    <string name="txt_history">Company History</string>
+    <string name="txt_information">Company Information</string>
+    <string name="txt_number">Company Number</string>
+    <string name="txt_address">Company Address</string>
+    <string name="btn_record_add">Add Record</string>
+    <string name="title_activity_delete_company">DeleteCompany</string>
+
+    // DeleteCompany.java
+    <string name="txt_title_del_name">Delete Company</string>
+    <string name="btn_record_delete">Delete Company</string>
+</resources>
