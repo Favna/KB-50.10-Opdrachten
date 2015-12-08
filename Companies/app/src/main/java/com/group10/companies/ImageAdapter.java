@@ -13,9 +13,8 @@ import android.widget.ImageView;
 public class ImageAdapter extends PagerAdapter {
     Context context;
     private int[] GalImages = new int[] {
-            //R.drawable.one,
-            //R.drawable.two,
-            //R.drawable.three
+            R.drawable.building,
+            R.drawable.building2
     };
     ImageAdapter(Context context){
         this.context=context;
