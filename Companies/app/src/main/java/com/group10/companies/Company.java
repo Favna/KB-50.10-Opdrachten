@@ -1,6 +1,7 @@
 package com.group10.companies;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Company extends Fragment {
     View rootView;
@@ -69,8 +71,11 @@ public class Company extends Fragment {
 
     public void openWeb(View v){
         TextView text = (TextView)v;
-        Intent i = new Intent("android.intent.action.VIEW");
-        i.setData(Uri.parse(text.getText().toString()));
-        startActivity(i);
+        Context context = getActivity().getApplicationContext();
+        Toast.makeText(context,text.getText(),Toast.LENGTH_LONG);
+
+        //Intent i = new Intent(Intent.ACTION_VIEW);
+        //i.setData(Uri.parse(text.getText().toString()));
+        //startActivity(i);
     }
 }
