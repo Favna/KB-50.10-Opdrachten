@@ -2,6 +2,7 @@ package com.group10.companies;
 
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,13 +27,10 @@ public class Office extends ListFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
         //Add row to database
         DatabaseHelper DBHelper = new DatabaseHelper(getActivity());
         SQLiteDatabase writedb = DBHelper.getWritableDatabase();
-        //DBHelper.onCreate(writedb, 1, 2);
         ContentValues initialValues = new ContentValues();
-        //initialValues.put("id", 1);
         initialValues.put("telephonenumber", "012111111111");
         initialValues.put("city", "Shitty");
         initialValues.put("address", "Town 1");
@@ -47,13 +47,18 @@ public class Office extends ListFragment {
             values.add(c.getString(0) + " " + c.getString(1) + " " + c.getString(2) + " " + c.getString(3) + " " + c.getString(4) + " " + c.getString(5));
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
-                android.R.layout.simple_list_item_1, values);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values);
         setListAdapter(adapter);
     }
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
-        // Not implemented
+        TextView c = (TextView) v;
+        String text = c.getText().toString();
+        int row_id = Integer.valueOf(text.substring(0, text.indexOf(" ")));
+        //Toast.makeText(getActivity(), "id = " + row_id, Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(getActivity(), Detail.class);
+        i.putExtra("id", row_id);
+        startActivity(i);
     }
 }
