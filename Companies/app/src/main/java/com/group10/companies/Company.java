@@ -11,6 +11,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,7 +68,8 @@ public class Company extends Fragment {
         TextView companyHistory = (TextView) rootView.findViewById(R.id.company_history);
         companyHistory.setText(c.getString(2));
         TextView companyUrl = (TextView) rootView.findViewById(R.id.company_url);
-        companyUrl.setText(c.getString(3));
+        companyUrl.setText(Html.fromHtml("<a href=\"" + c.getString(3) + "\">" + c.getString(3) + "</a>"));
+        companyUrl.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     public void openWeb(View v){
