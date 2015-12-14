@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/txt_name"
+        android:hint="@string/txt_name"
         android:ems="10"
         android:id="@+id/nameText"
         android:layout_below="@+id/textView"
@@ -42,7 +42,7 @@
         android:layout_alignLeft="@+id/nameText"
         android:layout_alignStart="@+id/nameText"
         android:layout_marginTop="28dp"
-        android:text="@string/txt_history" />
+        android:hint="@string/txt_history" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
         android:layout_alignLeft="@+id/historyText"
         android:layout_alignStart="@+id/historyText"
         android:layout_marginTop="27dp"
-        android:text="@string/txt_information" />
+        android:hint="@string/txt_information" />
 
     <Button
         android:layout_width="wrap_content"

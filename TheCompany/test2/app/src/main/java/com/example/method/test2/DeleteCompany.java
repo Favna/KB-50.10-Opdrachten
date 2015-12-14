@@ -1,6 +1,7 @@
 package com.example.method.test2;
 
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.net.Uri;
@@ -108,5 +109,12 @@ public class DeleteCompany extends AppCompatActivity {
 
     public void cancelRecord(View v) {
         finish();
+    }
+
+    public void modifyRecord(View v) {
+        System.out.println(itemValue);
+        Intent i = new Intent(this, ModifyCompany.class);
+        i.putExtra("id", Integer.valueOf(itemValue));
+        startActivity(i);
     }
 }

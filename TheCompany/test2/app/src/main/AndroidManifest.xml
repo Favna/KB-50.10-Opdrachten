@@ -19,10 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".AddCompany" />
+        <activity android:name=".ModifyCompany" />
         <activity
             android:name=".DeleteCompany"
             android:label="@string/title_activity_delete_company"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-    </application>
+        </application>
 
 </manifest>
