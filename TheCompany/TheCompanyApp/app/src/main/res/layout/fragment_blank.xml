@@ -9,42 +9,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal|top">
-
-        <TextView
-            android:layout_width="wrap_content"
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/fragment_company_title"
-            android:id="@+id/naamText"
-            android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/textView3"
-            android:layout_alignEnd="@+id/textView3"
-            android:layout_marginTop="158dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fragment_company_history"
-            android:id="@+id/historyText"
-            android:layout_marginTop="17dp"
-            android:layout_below="@+id/naamText"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fragment_company_website"
-            android:id="@+id/textView3"
-            android:layout_below="@+id/historyText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="29dp" />
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/view_pager"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_marginTop="350dp"/>
-
-
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_company_title"
+                    android:id="@+id/naamText"
+                    android:layout_marginTop="20dp" />
+                </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_company_history"
+                    android:id="@+id/historyText"
+                    android:layout_marginTop="17dp"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_company_website"
+                    android:id="@+id/textView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    />
+            </TableRow>
+        </TableLayout>
     </RelativeLayout>
 
 </FrameLayout>
