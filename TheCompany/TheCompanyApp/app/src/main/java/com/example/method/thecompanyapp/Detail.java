@@ -33,7 +33,7 @@ public class Detail extends AppCompatActivity {
     }
 
     private void setText() {
-        tv_number = (TextView) findViewById(R.id.txt_number);
+        tv_number = (TextView) findViewById(R.id.txtNumber);
         tv_address = (TextView) findViewById(R.id.txtAddress);
         tv_number.setText(number);
         tv_address.setText(address);

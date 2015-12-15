@@ -5,8 +5,8 @@
     tools:context="com.example.method.thecompanyapp.OfficeFragment">
 
     <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="376dp"
+        android:layout_width="fill_parent"
+        android:layout_height="406dp"
         android:id="@+id/listView"
         android:layout_gravity="left|bottom"
         android:choiceMode="singleChoice" />

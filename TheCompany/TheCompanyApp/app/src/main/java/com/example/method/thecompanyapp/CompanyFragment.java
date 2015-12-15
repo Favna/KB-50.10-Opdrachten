@@ -70,20 +70,20 @@ public class CompanyFragment extends Fragment {
 
         resolver = view.getContext().getContentResolver();
 
-        Button back = (Button) view.findViewById(R.id.btn_back);
-        Button forward = (Button) view.findViewById(R.id.btn_forward);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                back();
-            }
-        });
-        forward.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                forward();
-            }
-        });
+//        Button back = (Button) view.findViewById(R.id.btn_back);
+//        Button forward = (Button) view.findViewById(R.id.btn_forward);
+//        back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                back();
+//            }
+//        });
+//        forward.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                forward();
+//            }
+//        });
 
 
         getCompany();

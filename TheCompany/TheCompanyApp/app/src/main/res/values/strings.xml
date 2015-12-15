@@ -17,8 +17,8 @@
     <string name="title_activity_detail">Detail</string>
 
     // Detail
-    <string name="detail_txt_number">Number</string>
-    <string name="detail_txt_address">Address</string>
-    <string name="detail_btn_phone">Call</string>
-    <string name="detail_btn_map">Google Maps</string>
+    <string name="detail_txt_number">Number:</string>
+    <string name="detail_txt_address">Address:</string>
+    <string name="detail_btn_phone">Click button to call</string>
+    <string name="detail_btn_map">Show on Google Maps</string>
 </resources>
