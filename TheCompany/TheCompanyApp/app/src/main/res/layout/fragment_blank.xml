@@ -18,14 +18,14 @@
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/textView3"
             android:layout_alignEnd="@+id/textView3"
-            android:layout_marginTop="28dp" />
+            android:layout_marginTop="158dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_company_history"
             android:id="@+id/historyText"
-            android:layout_marginTop="37dp"
+            android:layout_marginTop="17dp"
             android:layout_below="@+id/naamText"
             android:layout_centerHorizontal="true" />
 
@@ -41,32 +41,9 @@
         <android.support.v4.view.ViewPager
             android:id="@+id/view_pager"
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:layout_marginTop="170dp"/>
+            android:layout_height="200dp"
+            android:layout_marginTop="350dp"/>
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/back"
-            android:id="@+id/btn_back"
-            android:layout_alignParentBottom="true"
-            android:layout_toLeftOf="@+id/textView3"
-            android:layout_toStartOf="@+id/textView3"
-            android:layout_marginBottom="38dp"/>
-            <!--android:onClick = "back"-->
-
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/forward"
-            android:id="@+id/btn_forward"
-            android:layout_alignBottom="@+id/btn_back"
-            android:layout_toRightOf="@+id/naamText"
-            android:layout_toEndOf="@+id/naamText"            />
-            <!--android:onClick="forward"-->
 
     </RelativeLayout>
 
