@@ -4,36 +4,45 @@
     android:layout_height="match_parent"
     tools:context=".CompanyFragment">
     //TODO: Fix layout so it stretches properly when dealing with large amounts of text or screen sizes
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_company_title"
             android:id="@+id/naamText"
-            android:layout_marginBottom="66dp"
-            android:layout_above="@+id/historyText"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_marginTop="28dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_company_history"
             android:id="@+id/historyText"
-            android:layout_above="@+id/textView3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="92dp" />
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/naamText"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_company_website"
             android:id="@+id/textView3"
-            android:layout_above="@+id/btn_back"
+            android:layout_below="@+id/historyText"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="122dp" />
+            android:layout_marginTop="29dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="170dp"/>
 
         <Button
             style="?android:attr/buttonStyleSmall"

@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -61,7 +62,7 @@ public class CompanyFragment extends Fragment {
                              Bundle savedInstanceState) {
         //view = inflater.inflate(R.layout.fragment_blank, container, false);
         view = inflater.inflate(R.layout.fragment_blank, container,false);
-
+        createGallery();
         naamText = (TextView) view.findViewById(R.id.naamText);
         historyText = (TextView) view.findViewById(R.id.historyText);
         websiteText = (TextView) view.findViewById(R.id.textView3);
@@ -89,7 +90,12 @@ public class CompanyFragment extends Fragment {
 
         return view;
     }
-
+    public void createGallery()
+    {
+        ViewPager viewPager = (ViewPager) view.findViewById(R.id.view_pager);
+        GalleryAdapter adapter = new GalleryAdapter(getActivity());
+        viewPager.setAdapter(adapter);
+    }
     public void getCompany() {
         String[] projection = new String[] {"name", "history"};
 
