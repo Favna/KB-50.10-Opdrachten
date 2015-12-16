@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">test2 CRUD</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="btn_add">Add Company</string>
+    <string name="btn_delete_modify">Delete/modify Company</string>
+
+    // General
+    <string name="btn_record_cancel">Cancel</string>
+    <string name="toast_no_record">Geen Gegevens Gevonden</string>
+    <string name="toast_no_selection">Geen Selectie Gevonden</string>
+
+    // AddCompany.java
+    <string name="txt_title_add_company">Bedrijf Toevoegen</string>
+    <string name="txt_name">Bedrijf Naam</string>
+    <string name="txt_history">Bedrijf Geschiedenis</string>
+    <string name="txt_information">Bedrijf Informatie</string>
+    <string name="txt_number">Bedrijf Nummer</string>
+    <string name="txt_address">Bedrijf Adres</string>
+    <string name="btn_record_add">Toevoegen Record</string>
+    <string name="title_activity_delete_company">Verwijder Bedrijf</string>
+    <string name="toast_added_company">Bedrijf Toegevoegt</string>
+
+    // DeleteCompany.java
+    <string name="txt_title_del_name">Verwijder Bedrijf</string>
+    <string name="btn_record_delete">Verwijder Bedrijf</string>
+    <string name="btn_record_modify">Wijzig Bedrijf</string>
+    <string name="toast_delete_company">Geselecteerde Bedrijf Verwijdert</string>
+
+    // ModifyCompany.java
+    <string name="toast_modify_company">Bedrijf Gewijzigt</string>
+</resources>

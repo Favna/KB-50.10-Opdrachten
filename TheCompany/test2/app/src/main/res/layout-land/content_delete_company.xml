@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.method.test2.DeleteCompany"
+    tools:showIn="@layout/activity_delete_company"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="323dp"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_record_delete"
+                android:id="@+id/buttonDelete"
+                android:onClick="deleteCompany"
+                android:layout_weight="0.3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_record_cancel"
+                android:id="@+id/buttonCancel"
+                android:onClick="cancelRecord"
+                android:layout_weight="0.3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_record_modify"
+                android:id="@+id/buttonModify"
+                android:onClick="modifyRecord"
+                android:layout_weight="0.3" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:layout_width="371dp"
+        android:layout_height="373dp"
+        android:id="@+id/listView"
+        android:choiceMode="singleChoice" />
+
+</LinearLayout>

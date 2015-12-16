@@ -58,7 +58,7 @@ public class ModifyCompany extends AppCompatActivity {
                 informationText.setText(information, TextView.BufferType.EDITABLE);
                 historyText.setText(history, TextView.BufferType.EDITABLE);
             }else{
-                Toast.makeText(getApplicationContext(), "No record found.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), R.string.toast_no_record, Toast.LENGTH_LONG).show();
             }
         }
 
@@ -76,7 +76,7 @@ public class ModifyCompany extends AppCompatActivity {
 
         resolver.update(CONTENT_URL, values, "id = ? ", new String[]{String.valueOf(id)});
 
-        Toast.makeText(getApplicationContext(), "Company updated", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), R.string.toast_modify_company, Toast.LENGTH_SHORT).show();
 
         finish();
     }

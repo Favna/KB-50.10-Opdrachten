@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">The Company</string>
+
+    // General
+    <string name="forward">Verder</string>
+    <string name="back">Terug</string>
+    <string name="toast_no_record">Geen Gegevens Gevonden</string>
+
+    // Fragment Company
+    <string name="fragment_company">Bedrijf</string>
+    <string name="fragment_company_title">Bedrijf Naam</string>
+    <string name="fragment_company_history">Geschiedenis</string>
+    <string name="fragment_company_website"> <a href="http://www.google.com">www.google.com</a></string>
+
+    // Fragment office
+    <string name="fragment_office">Kantoren</string>
+    <string name="title_activity_detail">Detail</string>
+
+    // Detail
+    <string name="detail_txt_number">Nummer:</string>
+    <string name="detail_txt_address">Adres:</string>
+    <string name="detail_btn_phone">Klik om te bellen</string>
+    <string name="detail_btn_map">Laten zien op Google Maps</string>
+</resources>

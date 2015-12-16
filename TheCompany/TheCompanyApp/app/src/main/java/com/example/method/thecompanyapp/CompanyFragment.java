@@ -102,7 +102,7 @@ public class CompanyFragment extends Fragment {
         Cursor cursor = resolver.query(CONTENT_URL, projection, null, null, null);
 
         if(cursor == null )
-            Toast.makeText(view.getContext().getApplicationContext(), "No Records found", Toast.LENGTH_LONG).show();
+            Toast.makeText(view.getContext().getApplicationContext(), R.string.toast_no_record, Toast.LENGTH_LONG).show();
 
         if(cursor != null ) {
             if(cursor.moveToFirst()) {
@@ -144,7 +144,7 @@ public class CompanyFragment extends Fragment {
             pos++;
             iterateList(pos);
         } else
-            Toast.makeText(view.getContext().getApplicationContext(), "No Record found", Toast.LENGTH_SHORT);
+            Toast.makeText(view.getContext().getApplicationContext(), R.string.toast_no_record, Toast.LENGTH_SHORT);
     }
 
     public void back() {
@@ -152,7 +152,7 @@ public class CompanyFragment extends Fragment {
             pos--;
             iterateList(pos);
         } else
-            Toast.makeText(view.getContext().getApplicationContext(), "No Record found", Toast.LENGTH_SHORT);
+            Toast.makeText(view.getContext().getApplicationContext(), R.string.toast_no_record, Toast.LENGTH_SHORT);
     }
 
 }

@@ -42,7 +42,7 @@ public class AddCompany extends AppCompatActivity {
 
         resolver.insert(CONTENT_URL, values);
 
-        Toast.makeText(getApplicationContext(), "Company Added", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), R.string.toast_added_company, Toast.LENGTH_SHORT).show();
     }
 
     public void cancelRecord(View v) {

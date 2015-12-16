@@ -104,7 +104,7 @@ public class OfficeFragment extends Fragment {
         listAddress = new ArrayList<String>();
 
         if(cursor == null )
-            Toast.makeText(view.getContext().getApplicationContext(), "No Records found", Toast.LENGTH_LONG).show();
+            Toast.makeText(view.getContext().getApplicationContext(), R.string.toast_no_record, Toast.LENGTH_LONG).show();
 
         if(cursor != null) {
             if(cursor.moveToFirst()) {

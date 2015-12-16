@@ -81,7 +81,7 @@ public class DeleteCompany extends AppCompatActivity {
         List<String> list = new ArrayList<String>();
 
         if(cursor == null )
-            Toast.makeText(getApplicationContext(), "No Records found", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), R.string.toast_no_record, Toast.LENGTH_LONG).show();
 
         if(cursor != null) {
             if(cursor.moveToFirst()) {
@@ -104,7 +104,7 @@ public class DeleteCompany extends AppCompatActivity {
         System.out.println(itemValue);
         long idDeleted = resolver.delete(CONTENT_URL, "id = ? ", new String[]{itemValue});
         getCompany();
-        Toast.makeText(getApplicationContext(), "Deleted Company Record", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), R.string.toast_delete_company, Toast.LENGTH_LONG).show();
     }
 
     public void cancelRecord(View v) {
@@ -113,8 +113,12 @@ public class DeleteCompany extends AppCompatActivity {
 
     public void modifyRecord(View v) {
         System.out.println(itemValue);
-        Intent i = new Intent(this, ModifyCompany.class);
-        i.putExtra("id", Integer.valueOf(itemValue));
-        startActivity(i);
+        if(itemValue == null) {
+            Toast.makeText(getApplicationContext(), R.string.toast_no_selection, Toast.LENGTH_LONG).show();
+        } else {
+            Intent i = new Intent(this, ModifyCompany.class);
+            i.putExtra("id", Integer.valueOf(itemValue));
+            startActivity(i);
+        }
     }
 }

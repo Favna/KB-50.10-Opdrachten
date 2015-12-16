@@ -4,6 +4,7 @@
     // General
     <string name="forward">Forward</string>
     <string name="back">Back</string>
+    <string name="toast_no_record">No Records Found</string>
 
     // Fragment Company
     <string name="fragment_company">Company</string>
